@@ -25,6 +25,8 @@
   width: 100%;
   z-index: 100;
   margin: 10px;
+  /* background-color: red; */
+  padding-top: 15px;
 }
 .header-search-conatiner{
   display: flex;
@@ -151,8 +153,12 @@ width: 100%;
 
 /* ------------DASHBOARD ---main-content-container------- */
 .main-content-container{
-  margin: 75px 350px;
-  width: 470px;
+  margin-top: 85px;
+  /* width: 470px; */
+  width: 35%;
+  /* background-color: red; */
+  position: relative;
+  left: 26%;
 }
 .dash-weak-div{
   display: flex;
@@ -283,4 +289,115 @@ gap: 0.2rem;
 
 .App{
   display: flex;
+  
+}
+.main-content-right{
+  background-color: var(--background-color);
+  width: 36%;
+  /* margin-top: 75px; */
+  position: relative;
+  left:27%;
+  margin: 10px;
+  border-radius:  0 20px 20px 0;
+overflow: hidden;
+padding: 20px;
+padding-top: 80px;
+}
+
+
+/* ----------calender----------------- */
+.dash-weak-div span{
+  color: var(--primary-color);
+  font-weight: 500;
+  padding-inline: 18px;
+}
+.calender-main-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap: 2.4rem; */
+}
+.schedule-column-div{
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.schedule-column-div div{
+  padding: 8px 15px;
+margin: 0;
+}
+
+.date-div{
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.day-div{
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: small;
+}
+.time-div{
+  font-size: small;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+.tuesday-div{
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+.bgm-time{
+  background-color: var(--primary-color);
+  color: white;
+  border-radius:10px;
+}
+.light-bgm{
+  background-color: rgba(119, 136, 153, 0.6);
+  color: white;
+  border-radius:10px;
+  display: flex;
+ flex-direction: column;
+ /* flex-wrap: wrap; */
+ align-items: center;
+ /* height: 33px; */
+ position: relative;
+ z-index: 1;
+}
+.light-bgv-sun{
+  background-color: rgba(119, 136, 153, 0.6);
+  color: white !important;
+  border-radius:0 10px 10px 0;
+  display: flex;
+ flex-direction: column;
+ /* flex-wrap: wrap; */
+ align-items: center;
+ /* height: 33px; */
+ position: relative;
+ z-index: 1;
+}
+.light-bgv-sat{
+  background-color: rgba(119, 136, 153, 0.6);
+
+  color: white;
+  border-radius: 10px 0 0 10px;
+ display: flex;
+ flex-direction: column;
+ /* flex-wrap: wrap; */
+ align-items: center;
+ /* height: 33px; */
+ position: relative;
+ z-index: 1;
+}
+.dot-span{
+ position: absolute;
+ bottom: 0;
+
+}
+
+.sunday-div div{
+  color: rgba(119, 136, 153, 0.7);
 }

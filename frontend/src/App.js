@@ -11,7 +11,7 @@ function App() {
       <TopNavigationBar />
       <SideNavBar />
       <Dashboard />
-      {/* <Calender/> */}
+      <Calender/>
     </div>
   );
 }

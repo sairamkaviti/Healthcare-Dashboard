@@ -1,5 +1,9 @@
 import React from 'react'
 import { TbArrowsMoveHorizontal } from "react-icons/tb";
+import Schedule from './Schedule';
+import { GiPlagueDoctorProfile } from "react-icons/gi";
+import { FaCheckCircle, FaEye, FaHeart, FaTeeth } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
 
 function Calender() {
   return (
@@ -71,6 +75,38 @@ function Calender() {
           <div className="time-div">11:00</div>
         </div>
       </div>
+
+      <Schedule
+        className="dentist-main-div"
+        title1="Dentist"
+        icon1={<FaTeeth />}
+        time1="09:00 - 11:00"
+        doctor1="Dr.Cameron Williamson"
+        title2="Physiotherapy Appointment"
+        icon2={<GiPlagueDoctorProfile />}
+        time2="11:00 - 12:00"
+        doctor2="Dr.Kevin Djones"
+      />
+      <br />
+      <h4>The Upcoming Schedule</h4>
+      <Schedule
+        day="On Thursday"
+        title1="Health Checkup Complete"
+        icon1={<FaCheckCircle />}
+        time1="11:00 AM"
+        title2="Opthamologist"
+        icon2={<FaEye />}
+        time2="14:00 PM"
+      />
+      <Schedule
+        day="On Friday"
+        title1="Cardiolgist"
+        icon1={<FaHeart />}
+        time1="12:00 AM"
+        title2="Neurologist"
+        icon2={<FaUserDoctor />}
+        time2="16:00 PM"
+      />
     </div>
   );
 }

@@ -7,6 +7,7 @@
   --primary-color:darkblue;
   --secondary-color:lightseagreen;
   --background-color:rgba(173, 216, 230, 0.15);
+  --secondary-bgm-color:rgba(176, 196, 222, 0.568);
 }
 
 .logo-heading{
@@ -59,6 +60,7 @@ padding: 0.7rem 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: -40px;
 }
 .bell-icon,.plus-icon,.avatar-image{
   border-radius: 8px;
@@ -97,6 +99,7 @@ padding: 0.7rem 1rem;
   margin: 10px;
   border-radius: 20px 0 0 20px;
 overflow: hidden;
+box-shadow: 2px 2px 5px var(--background-color);
 }
 .side-bar-main-container nav{
   /* background-color: whitesmoke; */
@@ -109,7 +112,7 @@ width: 100%;
 
 }
 .menu-section h5{
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
   color: gray;
   font-weight: 100;
 }
@@ -158,7 +161,7 @@ width: 100%;
   width: 35%;
   /* background-color: red; */
   position: relative;
-  left: 26%;
+  left: 23%;
 }
 .dash-weak-div{
   display: flex;
@@ -302,6 +305,8 @@ gap: 0.2rem;
 overflow: hidden;
 padding: 20px;
 padding-top: 80px;
+box-shadow: 2px 2px 5px var(--background-color);
+
 }
 
 
@@ -316,6 +321,7 @@ padding-top: 80px;
   flex-direction: row;
   flex-wrap: wrap;
   /* gap: 2.4rem; */
+  margin-bottom: 0.5rem;
 }
 .schedule-column-div{
   display: flex;
@@ -326,7 +332,7 @@ padding-top: 80px;
   margin: 0;
 }
 .schedule-column-div div{
-  padding: 8px 15px;
+  padding: 5px 14.5px;
 margin: 0;
 }
 
@@ -348,7 +354,7 @@ margin: 0;
 .tuesday-div{
   background-color: var(--background-color);
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px 10px;
 }
 .bgm-time{
   background-color: var(--primary-color);
@@ -381,7 +387,6 @@ margin: 0;
 }
 .light-bgv-sat{
   background-color: rgba(119, 136, 153, 0.6);
-
   color: white;
   border-radius: 10px 0 0 10px;
  display: flex;
@@ -400,4 +405,50 @@ margin: 0;
 
 .sunday-div div{
   color: rgba(119, 136, 153, 0.7);
+}
+
+.right-side-boxes-div{
+  padding: 12px 25px;
+  /* background-color: rgba(176, 196, 222, 0.568); */
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  color: white;
+  /* display: flex;
+  flex-direction: column;
+  gap: 0.5rem; */
+  font-size: small;
+}
+.right-name-icon-div{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+/* .right-name-icon-div span:nth-last-child(1){
+  color: var(--primary-color);
+  color: darkred;
+} */
+.calender-dentist-container-main{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+.physiotherapy-div{
+  background-color: var(--secondary-bgm-color);
+  color: black;
+}
+.schedule-day-head{
+  margin-block: 0.5rem;
+  font-size: small;
+  font-weight: 400;
+}
+.dentist-main-div{
+  background-color: var(--primary-color) !important;
+  color: white;
+  
+
+} 
+.dentist-main-div .right-name-icon-div{
+  display: flex;
+  justify-content: space-between !important;
 }

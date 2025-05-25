@@ -3,6 +3,7 @@ import { FaAngleDown, FaArrowRight, FaHeart, FaLungs } from 'react-icons/fa';
 import { LuBone } from "react-icons/lu";
 import { GiKidneys } from "react-icons/gi";
 import { GiLeg } from "react-icons/gi";
+import Activity from './Activity';
 function Dashboard() {
   return (
     <div className="main-content-container">
@@ -77,6 +78,8 @@ function Dashboard() {
           </div>
         </div>
       </div>
+      <br/>
+      <Activity/>
     </div>
   );
 }

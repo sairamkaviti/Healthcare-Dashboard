@@ -79,6 +79,7 @@ padding: 0.7rem 1rem;
   background-color: var(--secondary-color);
  width: 48px;
  height: 45px;
+ padding: 0;
 }
 .avatar-plus-container{
  display: flex;
@@ -322,6 +323,7 @@ box-shadow: 2px 2px 5px var(--background-color);
   flex-wrap: wrap;
   /* gap: 2.4rem; */
   margin-bottom: 0.5rem;
+  /* background-color: red; */
 }
 .schedule-column-div{
   display: flex;
@@ -332,7 +334,7 @@ box-shadow: 2px 2px 5px var(--background-color);
   margin: 0;
 }
 .schedule-column-div div{
-  padding: 5px 14.5px;
+  padding: 5px 14px;
 margin: 0;
 }
 
@@ -421,8 +423,8 @@ margin: 0;
 .right-name-icon-div{
   display: flex;
   /* justify-content: space-between; */
-  gap: 1.5rem;
-  margin-bottom: 0.4rem;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
 }
 /* .right-name-icon-div span:nth-last-child(1){
   color: var(--primary-color);
@@ -451,4 +453,91 @@ margin: 0;
 .dentist-main-div .right-name-icon-div{
   display: flex;
   justify-content: space-between !important;
+}
+
+
+/* -------------------Activity Container------------- */
+.activity-container{
+  background-color: red;
+  padding: 0.2rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--background-color);
+  /* width: fit-content; */
+}
+
+.activity-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.graph-container{
+  display: flex;
+  gap: 0.5rem;
+  /* padding-inline: 0.3rem; */
+  padding: 0.5rem;
+  margin-top: 5px;
+  /* background-color: red; */
+  
+}
+
+.pole{
+  /* width: 0.3rem; */
+  border-radius: 4px;
+}
+.graph-container > * {
+  width: 4px;
+}
+.long-pole-bar{
+  height: 78px;
+}
+.medium-pole-bar{
+  height: 35px;
+  
+}
+.short-pole-bar{
+  height: 15px;
+}
+.small-pole-bar{
+  height: 25px;
+ 
+}
+.gray-color{
+  background-color: rgba(119, 136, 153, 0.5);
+ 
+}
+.short-double-pole-container div{
+  margin-block: 5px;
+}
+.medium-double-pole-container{
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.primary-color{
+  background-color: var(--primary-color);
+}
+.secondary-color{
+  background-color: var(--secondary-color);
+}
+.second-pole{
+  margin-block: 21.5px;
+}
+.third-pole{
+  margin-top: 27px;
+}
+.fourth-pole{
+  margin-top: 53px;
+}
+
+.days-div-activity{
+  display: flex;
+  gap: 2rem;
+  padding-inline: 1.2rem;
+  color: lightslategray;
+  font-size: small;
+}
+.appoint-span{
+  font-size: small;
 }

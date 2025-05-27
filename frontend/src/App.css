@@ -21,7 +21,7 @@
   padding: 0 50px;
   /* height: 60px; */
   position: fixed;
-  top: 0;
+  top: 2%;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -87,6 +87,108 @@ padding: 0.7rem 1rem;
  gap: 1rem;
 }
 
+/* ----responsive for top nav */
+
+@media (max-width: 480px) {
+  .top-nav-main-container{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 1rem;
+    
+  }
+  .header-search-conatiner{
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .search-bell-container{
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-left: 0;
+    gap: 1rem;
+  }
+  .search-input-div{
+    width: 60%;
+  }
+  .avatar-plus-container{
+    /* align-self: center; */
+    gap: 0.5rem;
+    position: absolute;
+    right: 5%;
+    top: 70%;
+  }
+  .avatar-image{
+    width: 40px;
+    height: 40px;
+  }
+  .plus-icon,
+  .bell-icon{
+    padding: 0.5rem 0.7rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .top-nav-main-container{
+    flex-direction: row;
+   justify-content: space-between;
+    padding: 10px 30px;
+   
+    
+  }
+  .header-search-conatiner{
+    flex-direction: row;
+    gap: 4rem;
+   
+  }
+  .search-bell-container{
+   width: auto;
+    margin-left: -20px;
+    
+  }
+  .search-input-div{
+    width: 300px;
+  }
+  .avatar-plus-container{
+   
+    gap: 0.7rem;
+   
+  }
+  .avatar-image{
+    width: 44px;
+    height: 44px;
+  }
+
+}
+@media (min-width: 769px) {
+  .top-nav-main-container{
+    flex-direction: row;
+   justify-content: space-between;
+    padding: 0 50px;
+   
+    
+  }
+  .header-search-conatiner{
+    flex-direction: row;
+    gap: 10rem;
+   
+  }
+  .search-bell-container{
+   
+    margin-left: -40px;
+    
+  }
+  .search-input-div{
+    width: 500px;
+  }
+  .avatar-plus-container{
+   
+    gap: 1rem;
+   
+  }
+
+}
+
 
 /* --------side-bar--------------- */
 .side-bar-main-container{
@@ -97,10 +199,11 @@ padding: 0.7rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  margin: 10px;
+  margin: 10px 0 10px 10px;
   border-radius: 20px 0 0 20px;
 overflow: hidden;
 box-shadow: 2px 2px 5px var(--background-color);
+
 }
 .side-bar-main-container nav{
   /* background-color: whitesmoke; */
@@ -154,21 +257,72 @@ width: 100%;
 }
 
 
+/* ----responsive for side bar */
+@media (max-width: 768px) {
+
+  .side-bar-main-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 100vh; */
+    width: 100%;
+    /* max-width: 260px; */
+    margin: 0;
+    border-radius: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    inset: 0;
+    z-index: 1119;
+    background-color: var(--primary-color);
+    
+  }
+  .menu-section ul li,.first-li span,.menu-section h5{
+    color: white;
+  }
+  .side-bar-main-container.open{
+    transform: translateX(0%);
+    
+  }
+  .side-bar-main-container.closed{
+    transform: translateX(-100%);
+   
+  }
+  
+}
+.three-bar-icon{
+  display: none;
+}
+@media (max-width: 768px) {
+  .three-bar-icon{
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color:var(--primary-color);
+    margin-left: -10px;
+    margin-top: 5px;
+  }
+  
+}
 
 /* ------------DASHBOARD ---main-content-container------- */
 .main-content-container{
   margin-top: 85px;
-  /* width: 470px; */
-  width: 35%;
+  width: 100%;
+  max-width: 470px;
+  /* width: 35%; */
   /* background-color: red; */
   position: relative;
+  /* margin: 85px auto 0 auto; */
   left: 23%;
+
 }
 .dash-weak-div{
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* width: 570px; */
+ /* gap: 12rem; */
+ width: 100%;
 }
 .dash-weak-div div{
   display: flex;
@@ -204,9 +358,11 @@ width: 100%;
   background-color: var(--background-color);
   border-radius: 20px;
   padding:1rem;
- width: 200px;
+  /* width: 100%; */
+ max-width:300px;
  height: auto;
  margin: 5px;
+ /* flex-shrink: 0; */
 }
 .empty-divs-container{
   display: flex;
@@ -239,7 +395,9 @@ width: 100%;
 }
 .dash-primary-div{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
 }
 .date-span{
 font-size: x-small;
@@ -263,6 +421,7 @@ gap: 0.2rem;
 }
 .human-body-image-container{
   position: relative;
+  
 }
 .healthy-heart{
   position:absolute;
@@ -297,7 +456,9 @@ gap: 0.2rem;
 }
 .main-content-right{
   background-color: var(--background-color);
-  width: 36%;
+  
+  width: 100%;
+  max-width: 500px;
   /* margin-top: 75px; */
   position: relative;
   left:27%;
@@ -310,6 +471,48 @@ box-shadow: 2px 2px 5px var(--background-color);
 
 }
 
+
+
+/* -----dashborad responsive------------ */
+
+@media (max-width: 768px) {
+  .main-content-container{
+margin-top: 220px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+  .human-body-image{
+    width: 100%;
+    height: auto;
+  }
+  .healthy-heart,.healthy-legs{
+    font-size: 0.6rem;
+    padding: 0.3rem;
+  }
+  .healthy-heart{
+    position: absolute;
+    right: 20%;
+   
+  }
+  .healthy-legs{
+    position: absolute;
+    left: 25%;
+   
+  }
+  .body-three-divs-container{
+    display: flex;
+  }
+  .body-parts-content-div{
+    width: 100%;
+    max-width: 100%;
+  }
+  .App{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /* ----------calender----------------- */
 .dash-weak-div span{
@@ -324,6 +527,7 @@ box-shadow: 2px 2px 5px var(--background-color);
   /* gap: 2.4rem; */
   margin-bottom: 0.5rem;
   /* background-color: red; */
+ 
 }
 .schedule-column-div{
   display: flex;
@@ -455,6 +659,31 @@ margin: 0;
   justify-content: space-between !important;
 }
 
+@media (max-width:768px) {
+ 
+  /* .schedule-column-div div{
+    padding: 2px 4px;
+    margin: 0;
+  } */
+ 
+  .calender-main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-content-right{
+    width: 100%;
+   background-color: transparent;
+   border: 0;
+   box-shadow: none;
+   display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+left: 18%;
+
+  }
+}
 
 /* -------------------Activity Container------------- */
 .activity-container{

@@ -34,7 +34,7 @@ function Dashboard() {
             Healthy Legs
           </div>
         </div>
-        <div>
+        <div className='body-three-divs-container'>
           <div className="body-parts-content-div">
             <span className="parts-heading-icon">
               <FaLungs />

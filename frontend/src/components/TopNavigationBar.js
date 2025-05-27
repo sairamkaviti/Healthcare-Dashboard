@@ -1,11 +1,14 @@
 import React from 'react'
-import { FaBell, FaPlus, FaSearch } from "react-icons/fa";
+import { FaBars, FaBell, FaPlus, FaSearch } from "react-icons/fa";
 
-function TopNavigationBar() {
+function TopNavigationBar({ setSidebarOpen }) {
   return (
     <div className="top-nav-main-container">
-      <div className='header-search-conatiner'>
-       
+      <div className='three-bar-icon' onClick={() => setSidebarOpen(true)
+      }>
+<FaBars/>
+      </div>
+      <div className="header-search-conatiner">
         <h2>
           <span className="logo-heading">Health</span>Care.
         </h2>
